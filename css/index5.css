@@ -69,20 +69,63 @@ body {
     width: 70px; height: 70px;
     border: 1px solid orange;
     border-radius: 100px;
+    position: fixed;
+    bottom: 200px; right: 0px;
+    background: black;
 }
-.tip:hover div {
-    margin-left: 0;
+.tip:hover div {    /* 호버했을 때 -> div의 셋팅 */
+    margin-left: -150px;
 }
 .tip p {
     width: 100%; height: 100%;
     text-align: center;
     line-height: 70px;
-
 }
 .tip div {
-    border: 1px solid cyan;
-    width: 300px; height: 70px;
-    line-height: 70px;
-    margin-left: -300px;
-    transition: all 0.5s;
+    position: absolute;
+    top: 100;
+    border: 0px solid cyan;
+    width: 300px; height: 40px;
+    line-height: 40px;
+    margin-right: 270px;
+    transition: all 1s;
+}
+
+/* 큰 그림 박스 */
+.big {
+    border: 1px solid white;
+    position: fixed; /* 포지션 픽스는 퍼센트(가능),absolute(불가능)*/
+    left: 15%; top: 200px;
+    width: 70%; height: 70%;
+}
+.big .big_text1 {
+    border: 1px solid yellow;
+    top: 0; left: 0;
+    width: 500px; height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.big .big_text1 .big_img {
+    border: 0px solid white;
+    width: 800px; height: 700px;
+    position: absolute;
+    top: 0; left: 100%;
+    display: none;
+}
+.big .big_img table {
+    width: 100%;
+}
+.big .big_img table tr {
+
+}
+.big .big_img table tr td {
+    width: 50%;
+    border: 0px solid cyan;
+}
+.big .big_img table tr td img {
+    width: 300px;
 }
