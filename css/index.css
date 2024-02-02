@@ -95,7 +95,7 @@ section {
     bottom: 200px; right: 0px;
 
     width: 70px; height: 70px;
-    border: 1px solid  orange;
+    border: 0px solid  orange;
     border-radius: 100%;
     background: black;
 }
@@ -123,7 +123,7 @@ section {
     position: fixed; 
     top: 200px; left: 15%;
     width: 70%; height: 70%;
-    border: 1px solid white;
+    border: 0px solid white;
 }
 .big .big_text1 {
     position: relative;
@@ -131,7 +131,7 @@ section {
 
     width: 500px; height: 50px;
     line-height: 50px;
-    border: 1px solid white;
+    border: 0px solid white;
     font-size: 2rem;
     margin-top: 50px;
     margin-left: 50px;
@@ -176,68 +176,336 @@ section {
     0% { transform: scale(1.2);}
     100% { transform: scale(1);}
 }
+
 .sec1_tit {
     position: absolute;
     left: 100px;
     width: 900px; height: 50px;
-    line-height: 50px;
-    color: rgb(4, 117, 0);
+    line-height: 50px;   color: white;
     font-size: 2rem;
-    opacity: 0; /* 안보이게 하는 것 */
+    opacity: 0;
 }
-.sec1_title {
-    top: 100px; 
-    border: 0px solid black;
-    animation: sec1_title_ani 3s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards; /* forward:끝나고 그자리 유지*/
+.sec1_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec1_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
 }
 @keyframes sec1_title_ani {
     0% { top: 150px; opacity: 0;}
-    100% {top: 100px; opacity: 1;}
+    100% { top: 100px; opacity: 1;}
 }
-.sec1_title2 {
-    top: 150px;
-    animation: sec1_title2_ani 3s;
-    animation-delay: 3s;
+
+.sec1_title2 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec1_title2_ani 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 @keyframes sec1_title2_ani {
-    0% { top: 200px; opacity: 0; }
-    100% { top: 150px; opacity: 1; }
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
 }
+
 .sec1_ship {
     position: absolute;
-    top: 450px;
-    width: 500px; height: 500px;
-    /* linear infinite : 애니 무한 반복 */
-    animation: sec1_ship_ani 10s linear infinite;
-    animation-fill-mode: forwards;
-}
-.sec1_ship img {
-    width: 100%;
+    top: 550px; left: 2000px;
+    width: 100px; height: 100px;
+    border: 0px solid red;
+    animation: sec1_ship_ani 250s linear infinite;
 }
 @keyframes sec1_ship_ani {
-    0% { left: 0px; }
-    100% { left: 100%; }
+    0% { left: 2000px;}
+    100% { left: -200px;}
 }
-.sec1_plane {
+.sec1_ship img {
+    width: 100%; 
+}
+
+.sec1_fly {
     position: absolute;
-    top: 50px;
-    width: 500px; height: 500px;
-    /* linear infinite : 애니 무한 반복 */
-    animation: sec1_plane_ani 10s linear infinite;
-    animation-fill-mode: forwards;
+    top: 100px; left: 2000px;
+    width: 100px; height: 100px;
+    border: 0px solid red;
+    animation: sec1_fly_ani 250s linear infinite;
 }
-.sec1_plane img {
-    width: 50%;
+@keyframes sec1_fly_ani {
+    0% { left: -100px;}
+    100% { left: 2000px;}
 }
-@keyframes sec1_plane_ani {
-    0% { left: 2000px; }
-    100% { left: 0px; }
+.sec1_fly img {
+    width: 100%; 
 }
 /* 섹션-1 끝 */
 
-.sec1 {
+
+
+
+
+
+/* 섹션-2 시작 */
+.sec2_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;   color: white;
+    font-size: 2rem;
+    opacity: 0;
+}
+.sec2_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec1_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sec2_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% { top: 100px; opacity: 1;}
+}
+
+.sec2_title2 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec1_title2_ani 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec2_title2_ani {
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
+}
+/* 섹션-2 끝 */
+
+
+
+/* 섹션-3 시작 */
+.sec3_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;   color: white;
+    font-size: 2rem;
+    opacity: 0;
+}
+.sec3_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec3_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sec3_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% { top: 100px; opacity: 1;}
+}
+
+.sec3_title2 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec1_title2_ani 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec3_title2_ani {
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
+}
+/* 섹션-3 끝 */
+
+
+
+/* 섹션-4 시작 */
+.sec4_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;   color: white;
+    font-size: 2rem;
+    opacity: 0;
+}
+.sec4_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec4_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sec4_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% { top: 100px; opacity: 1;}
+}
+
+.sec4_title2 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec4_title2_ani 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec4_title2_ani {
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
+}
+/* 섹션-4 끝 */
+
+
+
+
+/* 섹션-5 시작 */
+.sec5_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;   color: white;
+    font-size: 2rem;
+    opacity: 0;
+}
+.sec5_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec5_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sec5_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% { top: 100px; opacity: 1;}
+}
+
+.sec5_title5 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec5_title2_ani 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec5_title2_ani {
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
+}
+/* 섹션-5 끝 */
+
+
+
+/* 섹션-6 시작 */
+.sec6_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;   color: white;
+    font-size: 2rem;
+    opacity: 0;
+}
+.sec6_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec6_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sec6_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% { top: 100px; opacity: 1;}
+}
+
+.sec6_title2 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec6_title2_ani 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec6_title2_ani {
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
+}
+/* 섹션-6 끝 */
+
+
+
+
+
+/* 섹션-7 시작 */
+.sec7_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;   color: white;
+    font-size: 2rem;
+    opacity: 0;
+}
+.sec7_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec7_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sec7_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% { top: 100px; opacity: 1;}
+}
+
+.sec7_title2 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec7_title2_ani 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec7_title2_ani {
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
+}
+/* 섹션-7 끝 */
+
+
+
+/* 섹션-8 시작 */
+.sec8_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;   color: white;
+    font-size: 2rem;
+    opacity: 0;
+}
+.sec8_title {    
+    top: 100px;     
+    border: 0px solid black;     
+    animation: sec8_title_ani 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sec8_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% { top: 100px; opacity: 1;}
+}
+
+.sec8_title2 {    
+    top: 200px;     
+    border: 0px solid black;
+    animation: sec1_title2_ani 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec8_title2_ani {
+    0% { top: 250px; opacity: 0;}
+    100% { top: 200px; opacity: 1;}
+}
+/* 섹션-8 끝 */
+
+.sec0 {
     display: block;
 }
