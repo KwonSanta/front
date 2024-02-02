@@ -1,3 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
 * {
-    margin: 0;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    color: white;
+    overflow-y: hidden;
+}
+.back {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: -1;
+    width: 100%; height: 100%;
+
+    background: url(../img/bg2.jpg);
+    background-size: "100% 100%";
+
+    background: black;
+    
+}
+.title {    /* ul-메뉴 */
+    width: 100%; height: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title li {
+    width: 200px; height: 50px;
+    border: 0px solid red;
+    color: white;
+    text-align: center;   
+    line-height: 50px;
+    cursor: pointer;
+}
+.title li:hover {
+    font-size: 1.1rem;
+    color: orange;
+}
+.menu {
+    width: 100px; height: 50px;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+.menu:hover .sub {
+    display: block;
+}
+.menu p {
+    width: 100%; height: 100%;
+    line-height: 50px;
+    border: 1px solid yellow;
+    text-align: center;
+}
+.menu .sub {
+    border: 0px solid red;
+    display: none;
+    
+}
+.menu .sub li {
+    width: 100%; height: 40px;
+    line-height: 40px;
+    border: 1px solid blue;
+    text-align: center;
+    cursor: pointer;
+}
+.menu .sub li:hover {
+    background: skyblue;
+}
+
+
+
+
+
+/*     *********************************    */
+section {
+    position: absolute;
+    top: 100px; left: 0;
+    width: 100%; height: 900px;
+    border: 0px solid red;
+    display: none;
+    overflow: hidden;
+}
+/*     *********************************    */
+
+
+
+
+
+
+.tip {
+    position: fixed;
+    bottom: 200px; right: 0px;
+
+    width: 70px; height: 70px;
+    border: 1px solid  orange;
+    border-radius: 100%;
+    background: black;
+}
+.tip:hover div {
+    margin-left: -150px;
+}
+.tip p {
+    width: 100%; height: 100%;
+    line-height: 70px;
+    text-align: center;
+}
+.tip div {
+    position: absolute;
+    top: 100%;
+
+    width: 300px; height: 40px;        
+    line-height: 40px;
+    border: 0px solid cyan;
+    margin-left: 300px;
+    transition: all 0.5s;
+}
+
+/* 큰 그림 박스 */
+.big {
+    position: fixed; 
+    top: 200px; left: 15%;
+    width: 70%; height: 70%;
+    border: 1px solid white;
+}
+.big .big_text1 {
+    position: relative;
+    top: 0; left: 0;
+
+    width: 500px; height: 50px;
+    line-height: 50px;
+    border: 1px solid white;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.big .big_img {
+    position: absolute;
+    top: 0; left: 100%;
+
+    width: 800px; height: 700px;
+    border: 0px solid red;
+    display: none;
+}
+.big .big_img table { 
+    width: 100%;
+}
+ .big .big_img table tr {  }
+ .big .big_img table tr td { 
+    width: 50%;
+    border: 0px solid cyan;
+}
+.big .big_img table tr td img {
+    width: 300px;
+}
+
+
+
+
+
+
+/* 섹션-1 시작 */
+.back1 {
+    position: absolute; top: 0; left: 0;
+    z-index: -1;
+    width: 100%; height: 100%;
+    border: 0px solid red;
+    background: url(../img/bg3.jpg);
+    background-size: 100% 100%;
+    animation: back1_ani 1s;
+}
+@keyframes back1_ani {
+    0% { transform: scale(1.2);}
+    100% { transform: scale(1);}
+}
+.sec1_tit {
+    position: absolute;
+    left: 100px;
+    width: 900px; height: 50px;
+    line-height: 50px;
+    color: rgb(4, 117, 0);
+    font-size: 2rem;
+    opacity: 0; /* 안보이게 하는 것 */
+}
+.sec1_title {
+    top: 100px; 
+    border: 0px solid black;
+    animation: sec1_title_ani 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards; /* forward:끝나고 그자리 유지*/
+}
+@keyframes sec1_title_ani {
+    0% { top: 150px; opacity: 0;}
+    100% {top: 100px; opacity: 1;}
+}
+.sec1_title2 {
+    top: 150px;
+    animation: sec1_title2_ani 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes sec1_title2_ani {
+    0% { top: 200px; opacity: 0; }
+    100% { top: 150px; opacity: 1; }
+}
+.sec1_ship {
+    position: absolute;
+    top: 450px;
+    width: 500px; height: 500px;
+    /* linear infinite : 애니 무한 반복 */
+    animation: sec1_ship_ani 10s linear infinite;
+    animation-fill-mode: forwards;
+}
+.sec1_ship img {
+    width: 100%;
+}
+@keyframes sec1_ship_ani {
+    0% { left: 0px; }
+    100% { left: 100%; }
+}
+.sec1_plane {
+    position: absolute;
+    top: 50px;
+    width: 500px; height: 500px;
+    /* linear infinite : 애니 무한 반복 */
+    animation: sec1_plane_ani 10s linear infinite;
+    animation-fill-mode: forwards;
+}
+.sec1_plane img {
+    width: 50%;
+}
+@keyframes sec1_plane_ani {
+    0% { left: 2000px; }
+    100% { left: 0px; }
+}
+/* 섹션-1 끝 */
+
+.sec1 {
+    display: block;
 }

@@ -4,159 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/dc7972571d.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/index.css">
 </head>
+<script>
+    function func(js) {
+        big_imgID1.style.display="none";
+        big_imgID2.style.display="none";
+        big_imgID3.style.display="none";
+        this["big_imgID"+js].style.display="block";
+    }
+    function func_menu(js) {        
+        secID0.style.display="none";
+        secID1.style.display="none";
+        secID2.style.display="none";
+        secID3.style.display="none";
+        secID4.style.display="none";
+        secID5.style.display="none";
+        secID6.style.display="none";
+        secID7.style.display="none";
+        secID8.style.display="none";
+        this["secID"+js].style.display="block";
+    }
+</script>
 <body>
-    <div class="title">
-        &#64;최신 트렌드
-    </div>
-    <p class="gong">공지사항</p>
+    <div class="back"></div>
+    <ul class="title">
+        <li onclick="func_menu(1)">실버문화의 중요성</li>
+        <li onclick="func_menu(2)">노후를 위한 생활습관</li>
+        <li onclick="func_menu(3)">문화 예술과 창작활동</li>
+        <li onclick="func_menu(4)">디지털 기술의 활용</li>
+        <li onclick="func_menu(5)">지속 가능한 노후 활동</li>
+        <li onclick="func_menu(6)">실버 문화 성공 사례</li>
+        <li onclick="func_menu(7)">지역사회 협력</li>
+        <li onclick="func_menu(8)">가족 및 사회적 지원</li>
+    </ul>
+    <section id="secID0" class="sec0">
+        <div class="menu">
+            <p>메뉴보기</p>
+            <ul class="sub">
+                <li>건강</li>
+                <li>풍요</li>
+                <li>재테크</li>
+                <li>문화</li>
+                <li>활동</li>
+            </ul>
+        </div>
+        <div class="tip">
+            <p>Tip</p>
+            <div>
+                새로운 정보를 알려드립니다.
+            </div>
+        </div>
+    
+        <div class="big">
+            <div class="big_text1">
+                <p onclick="func(1)">규칙적인 운동과 활동</p>
+                <div class="big_img" id="big_imgID1">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/img2.png" alt="">
+                            </td>
+                            <td valign="top">
+                                <p>꾸준한 운동</p>
+                                <p>꾸준한 운동</p>
+                                <p>꾸준한 운동</p>
+                                <p>꾸준한 운동</p>
+                                <p>꾸준한 운동</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <p onclick="func(2)">건강한 식습관과 영양 섭취</p>
+                <div class="big_img" id="big_imgID2" >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/img3.png" alt="">
+                            </td>
+                            <td valign="top">
+                                <p>식습관-1</p>
+                                <p>식습관-2</p>
+                                <p>식습관-3</p>
+                                <p>식습관-4</p>
+                                <p>식습관-5</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <p onclick="func(3)">스트레스 관리와 정신 건강</p>
+                <div class="big_img" id="big_imgID3">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/img5.png" alt="">
+                            </td>
+                            <td valign="top">
+                                <p>스트레스 관리</p>
+                                <p>스트레스 관리</p>
+                                <p>스트레스 관리</p>
+                                <p>스트레스 관리</p>
+                                <p>스트레스 관리</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <table class="table_title">
-        <tr>
-            <td>행사안내</td>
-            <td>대리점안내</td>
-            <td>주문결제</td>
-            <td>온라인예약</td>
-            <td>자주묻는질문</td>
-        </tr>
-    </table>
 
-    <table class="content" cellspacing="0"> 
-        <!-- cellspacing:셀과 셀 사이 공간을 없앰 -->
-        <tr id="head">
-            <th>번호</th>
-            <th>날짜</th>
-            <th>제목</th>
-            <th>조회수</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>2024-01-03</td>
-            <td>2024년 시무식을 알려드립니다.</td>
-            <td>123</td>
-        </tr>
+    <section id="secID1" class="sec1">
+        <div class="back1"></div>
+        <div class="sec1_title sec1_tit">
+            새로운 게임의 왕자
+        </div>
+        <div class="sec1_title2 sec1_tit">
+            롤오버워치 탄생 개시합니다.
+        </div>
+        <div class="sec1_ship">
+            <img src="img/img6.png" alt="">
+        </div>
+        <div class="sec1_plane">
+            <img src="img/img7.png" alt="">
+        </div>
+    </section>
 
-    </table>
-    <table class="page_btn">
-        <tr>
-            <td>&blacktriangleleft;	</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>&blacktriangleright;</td>
-        </tr>
-    </table>
+    <section id="secID2" class="sec2">메뉴 섹션-2</section>
+    <section id="secID3" class="sec3">메뉴 섹션-3</section>
+    <section id="secID4" class="sec4">메뉴 섹션-4</section>
+    <section id="secID5" class="sec5">메뉴 섹션-5</section>
+    <section id="secID6" class="sec6">메뉴 섹션-6</section>
+    <section id="secID7" class="sec7">메뉴 섹션-7</section>
+    <section id="secID8" class="sec8">메뉴 섹션-8</section>
+    
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-    <table class="table_1">
-        <tr>  줄 만드는 것 | 보더 적용 안됨
-            <td>치즈햄버거</td> 칸 만드는 것 | 보더 적용 됨
-            <td>야채햄버거</td>
-        </tr>
-        <tr>
-            <td><img src="img/img1.webp" alt=""></td>
-            <td><img src="img/img2.jpeg" alt=""></td>
-        </tr>
-        <tr> 
-            <td>햄버거3</td> 
-            <td>햄버거4</td>
-        </tr>
-        <tr>
-            <td><img src="img/img1.webp" alt=""></td>
-            <td><img src="img/img2.jpeg" alt=""></td>
-        </tr>
-    </table>
--->
