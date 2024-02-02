@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index4.css">
+</head>
+<script src="https://kit.fontawesome.com/c59c424d22.js" crossorigin="anonymous"></script>
+<script>
+    function func(js) {
+        console.log(js);
+        txt1.style.display = "none";
+        txt2.style.display = "none";
+        txt3.style.display = "none";
+        txt4.style.display = "none";
+        txt5.style.display = "none";
+        this["txt" + js].style.display = "flex";
+    }
+    
+    function func_con(js) {
+        console.log(js);
+        con1.style.display = "none";
+        con2.style.display = "none";
+        con3.style.display = "none";
+        con4.style.display = "none";
+        con5.style.display = "none";
+        con6.style.display = "none";
+        con7.style.display = "none";
+        con8.style.display = "none";
+        con9.style.display = "none";
+        con10.style.display = "none";
+        con11.style.display = "none";
+        con12.style.display = "none";
+        con13.style.display = "none";
+        con14.style.display = "none";
+        con15.style.display = "none";
+        this["con" + js].style.display = "block"
+    }
+
+</script>
+<body>
+    <div class="title">
+        NCS 소개
+    </div>
+    <div class="menu">
+        <div class="left">
+            <p onclick="func(1)">NCS란 무엇인가</p>
+            <p onclick="func(2)">학습모듈</p>
+            <p onclick="func(3)">산업별 역량체계</p>
+            <p onclick="func(4)">NCS활용</p>
+            <p onclick="func(5)">직업기초능력</p>
+        </div>
+        <div class="right">
+            <div id="txt1">
+                <p class="icon" onclick="func_con(1)"><i class="fa-brands fa-dev"></i></p>
+                <p class="icon" onclick="func_con(2)"><i class="fa-solid fa-code"></i></p>
+                <p class="icon" onclick="func_con(3)"><i class="fa-solid fa-gamepad"></i></p>            
+                <p class="icon_text" onclick="func_con(1)">기술</p>
+                <p class="icon_text" onclick="func_con(2)">지식</p>
+                <p class="icon_text" onclick="func_con(3)">태도</p>
+            </div>
+            <div id="txt2">
+                <p class="icon" onclick="func_con(4)"><i class="fa-brands fa-dev"></i></p>
+                <p class="icon" onclick="func_con(5)"><i class="fa-solid fa-code"></i></p>
+                <p class="icon" onclick="func_con(6)"><i class="fa-solid fa-gamepad"></i></p>            
+                <p class="icon_text" onclick="func_con(4)">대분류</p>
+                <p class="icon_text" onclick="func_con(5)">중분류</p>
+                <p class="icon_text" onclick="func_con(6)">소분류</p>
+            </div>
+            <div id="txt3">
+                <p class="icon" onclick="func_con(7)"><i class="fa-solid fa-wifi"></i></p>
+                <p class="icon" onclick="func_con(8)"><i class="fa-solid fa-file"></i></p>
+                <p class="icon" onclick="func_con(9)"><i class="fa-solid fa-envelope"></i></p>            
+                <p class="icon_text" onclick="func_con(7)">개발현황</p>
+                <p class="icon_text" onclick="func_con(8)">활용사례</p>
+                <p class="icon_text" onclick="func_con(9)">적용 가이드</p>
+            </div>
+            <div id="txt4">
+                <p class="icon" onclick="func_con(10)"><i class="fa-brands fa-dev"></i></p>
+                <p class="icon" onclick="func_con(11)"><i class="fa-solid fa-code"></i></p>
+                <p class="icon" onclick="func_con(12)"><i class="fa-solid fa-gamepad"></i></p>
+                <p class="icon_text" onclick="func_con(10)">프로젝트</p>
+                <p class="icon_text" onclick="func_con(11)">훈련사항</p>
+                <p class="icon_text" onclick="func_con(12)">교육내용</p>
+            </div>
+            <div id="txt5">
+                <p class="icon" onclick="func_con(13)"><i class="fa-brands fa-dev"></i></p>
+                <p class="icon" onclick="func_con(14)"><i class="fa-solid fa-code"></i></p>
+                <p class="icon" onclick="func_con(15)"><i class="fa-solid fa-gamepad"></i></p>
+                <p class="icon_text" onclick="func_con(13)">인사관리</p>
+                <p class="icon_text" onclick="func_con(14)">기술분야</p>
+                <p class="icon_text" onclick="func_con(15)">SQF</p>
+            </div>
+        </div>
+    </div>
+    <div id="con1" class="content1 content">
+        <div class="content_title">
+            <p style="width: 100%;">NCS 기반 취업 전략과 취업 역량 코칭</p>
+            <p style="width: 100%;">NCS의 개념과 목적</p>
+            <p style="width: 100%;">국가 직무 능력 표준을 기반으로 하는 직무 역량 표준화 시스템</p>
+        </div>
+    </div>
+    <div id="con2" class="content2 content">
+        <div class="content_title">
+            <p style="width: 40%;">NCS</p>
+            <p style="width: 40%;">코칭</p>
+        </div>
+    </div>
+    <div id="con3" class="content3 content">
+        <div class="content3_box">
+            <div>열정적인 태드</div>
+            <div>진취적인 태도</div>
+            <div>학습 의지</div>
+            <div>도전 정신</div>
+        </div>
+        <div class="content3_img"></div>
+        <p class="content3_img_text">보라카이 해변</p>
+    </div>
+
+
+
+    <div id="con4" class="content4 content">
+        
+    </div>
+
+
+
+
+    <div id="con5" class="content5 content">중분류</div>
+    <div id="con6" class="content6 content">소분류</div>
+    <div id="con7" class="content7 content">개발현황</div>
+    <div id="con8" class="content8 content">활용사례</div>
+    <div id="con9" class="content9 content">적용 가이드</div>
+    <div id="con10" class="content10 content">프로젝트</div>
+    <div id="con11" class="content11 content">훈련사항</div>
+    <div id="con12" class="content12 content">교육내용</div>
+    <div id="con13" class="content13 content">인사관리</div>
+    <div id="con14" class="content14 content">기술분야</div>
+    <div id="con15" class="content15 content">
+        <div class="content_title">
+            <p>직무분석</p>
+            <p>훈련정보</p>
+            <p>직업정보</p>
+            <p>채용공고</p>
+        </div>
+        <div class="content15_box">
+            <div>
+                <img src="img/content_img1.jpg" alt="">
+            </div>
+            <div>
+                <p>설명-1</p>
+                <p>설명-2</p>
+                <p>설명-3</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

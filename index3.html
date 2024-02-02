@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index3.css">
+</head>
+<body>
+    <!-- .layout : 검정 배경 -->
+    <div class="layout">
+        <div class="left">
+            <div class="pic">
+                <img src="img/img3.png" alt="">
+            </div>
+            <p class="text1">백엔드 전문가</p>
+            <p class="text2">권성인</p>
+            <p class="text3">Kwon Seong-In</p>
+
+            <p class="menu1 menu" onclick="func(1)">현재 상황</p>
+            <p class="menu2 menu" onclick="func(2)">목표 설정</p>
+            <p class="menu3 menu" onclick="func(3)">나의 강점</p>
+            <p class="menu4 menu" onclick="func(4)">개발 영역</p>
+            <p class="menu5 menu" onclick="func(5)">스킬 계획</p>
+            <p class="menu6 menu" onclick="func(6)">네트워킹 전략</p>
+
+            <p class="text4 left_text">연락처</p>
+            <p class="text5 left_text">010-1234-5678</p>
+            <p class="text6 left_text">abc@naver.com</p>
+            <p class="text7 left_text">서울시 강남구 대호빌딩 25</p>
+        </div>
+
+    <!-- 클릭 함수 정의 -->
+    <script>
+        function func(js) {
+            right1.style.display = "none";
+            right2.style.display = "none";
+            right3.style.display = "none";
+            right4.style.display = "none";
+            right5.style.display = "none";
+            right6.style.display = "none";
+            this["right" + js].style.display = "block";
+        }
+    </script>
+
+        <!-- 왼쪽 메뉴 클릭 시 오른쪽에 데이터 표시 -->
+        <div class="right" id="right1">
+            <p>현재 상황</p>
+            <p>현재 직업 상황 또는 대학에서의 상황</p>
+            <p>강점과 발전 가능성 소개</p>
+        </div>
+        <div class="right" id="right2">
+            <p>목표 설정</p>
+            <p>어떤 직업에 도전하고 싶은지에 대한 비전 소개</p>
+            <p>3년, 5년 후 나를 그려보기</p>
+            <p>구체적이고 현실적인 목표 설정</p>
+        </div>
+        <div class="right" id="right3">
+            <p>나의 강점</p>
+            <p>내 강점은 무엇인지?</p>
+            <p>강점을 더욱 강화하기 위한 나만의 전략</p>
+        </div>
+        <div class="right" id="right4">
+            <p>개발 영역</p>
+            <p>현재 산업 동향과 자기 분야에 필요한 기술 습득</p>
+            <p>수요가 높은 분야 파악</p>
+        </div>
+        <div class="right" id="right5">
+            <p>스킬 계획</p>
+            <p>필요한 스킬 목록</p>
+            <p>스킬 개발을 위한 계획 및 일정</p>
+        </div>
+        <div class="right" id="right6">
+            <p>네트워킹 전략</p>
+            <p>어떻게 전문 네트워크를 구축할 것인가?</p>
+            <p>인터뷰 및 커리어 박람회 참여 계획</p>
+        </div>
+
+    </div>
+</body>
+</html>
