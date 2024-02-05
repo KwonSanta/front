@@ -1,0 +1,53 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    list-style: none; /* 불릿 점 지우는것 */
+}
+html {
+    font-size: 30px;
+}
+.menu {
+    border: 1px solid black;
+    width: 100%; height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.menu li {
+    border: 1px solid green;
+    width: 200px; height: 100%;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+}
+.big {
+    border: 0px solid red;
+    width: 1000px; height: 500px;
+    margin: 100px auto;
+}
+.big img {
+    width: 100%; height: 100%;
+}
+.no {
+    border: 1px solid black;
+    width: 100px; height: 50px;
+    margin: -90px auto;
+    text-align: center;
+    line-height: 50px;
+}
+#arrow {
+    border: 0px solid red;
+    position: absolute;
+    top: 400px; left: 50%;
+    /* translate():상하좌우 움직임 */
+    transform: translateX(-50%);
+    width: 1200px; height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#arrow li {
+    border: 0px solid blue;
+    width: 100px; height: 100%;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}

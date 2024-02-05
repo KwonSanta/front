@@ -7,7 +7,7 @@
 }
 body {
     color: white;
-    overflow-y: hidden;
+    overflow-y: hidden; /* 넘치는 것 잡아줌 */
 }
 .back {
     position: fixed;

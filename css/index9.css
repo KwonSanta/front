@@ -1,0 +1,124 @@
+* {
+    margin: 0;  padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 배달의민족 한나체 Air;
+}
+.menu {
+    width: 100%; height: 70px;
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A2C7E2;
+}
+.menu li {
+    width: 200px; height: 50px;
+    background: #636569;
+    color: #A2C7E2;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 100px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+section {
+    border: 0px solid blue;
+    position: absolute;
+    top: 70px; left: 0;
+    width: 100%; height: 90%; /* 포지션을 absolute로 잡으면 width,height %로 쓸수있음 */
+    display: flex;
+}
+section div {
+    border: 0px solid red;
+}
+.left {
+    border: 0px solid blue;
+    width: 10%; height: 100%;
+    text-align: center;
+    background: #636569;
+}
+.left div {
+    width: 80%; height: 50px;
+    margin: 50px auto;
+    background: #A2C7E2;
+    color: #636569;
+    line-height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.right {
+    border: 0px solid green;
+    width: 90%; height: 100%;
+}
+.right div:first-child {
+    height: 90%;
+}
+.right div:last-child {
+    height: 10%;
+}
+section .title {
+    border: 5px solid red;
+    position: absolute;
+    top: 0; left: 15%;
+    width: 80%; height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+}
+
+/* 
+    사이드 메뉴 클릭시 나타나는 오른쪽 공간(h:90%) 
+    자식태그(article)를 absolute하기 위해
+*/
+.right .right_up {
+    position: relative;
+    top: 0; left: 0;
+    width: 100%; height: 100%;    
+}
+/* 
+    article : 각각 메뉴의 본문 내용 표시
+ */
+.right .right_up article {
+    border: 1px solid black;
+    position: absolute;
+    top: 70px; left: 0;
+    width: 100%; height: 100%;
+    background: black;
+    color: white;
+    display: none;
+}
+.right .right_up .at0 {
+    display: block;
+}
+.right .right_up .at0 .at0_box {
+    width: 100px; height: 100px;
+    position: absolute;
+    top: 0; left: 0;
+    border: 1px solid blue;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0.4;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.right .right_up .at0 .at0_box0 { top: 50px; left: 150px; opacity: 1;}
+.right .right_up .at0 .at0_box1 { top: 150px; left: 550px; }
+.right .right_up .at0 .at0_box2 { top: 250px; left: 350px; }
+.right .right_up .at0 .at0_box3 { top: 350px; left: 450px; }
+.right .right_up .at0 .at0_box4 { top: 235px; left: 550px; }
+.right .right_up .at0 .at0_box5 { top: 485px; left: 250px; }
+.right .right_up .at0 .at0_box6 { top: 654px; left: 350px; }
+.right .right_up .at0 .at0_box7 { top: 259px; left: 650px; }
+.right .right_up .at0 .at0_box8 { top: 445px; left: 480px; }
+.right .right_up .at0 .at0_box9 { top: 330px; left: 740px; }
+
+.right .right_down {
+
+}
