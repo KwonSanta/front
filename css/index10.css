@@ -1,0 +1,54 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 배달의민족 한나체 Air;
+}
+.menu {
+    border: 1px solid black;
+    width: 80%; height: 50px;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li {
+    border: 1px solid red;
+    width: 10%; height: 100%;
+    text-align: center;   
+    line-height: 50px;
+    cursor: pointer;
+}
+/* 큰 그림 박스 */
+#big {
+    border: 1px solid red;
+    width: 80%; height: 500px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+#big img {
+    width: 100%; height: 100%;
+}
+#big:hover img {
+    transform: scale(1.5);
+    transition: all, 0.5s;  /* 수행 시간 */
+}
+#big img:hover {
+    /* transform: scale(1,5); */
+}
+/* 작은 그림 7개 */
+.img7 {
+    border: 1px solid green;
+    width: 80%; height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.img7 div {
+    width: 10%; height: 100%;
+    border: 1px solid yellow;
+    cursor: pointer;
+}
+.img7 div:hover {
+    transform: scale(1.5);
+}
