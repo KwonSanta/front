@@ -1,0 +1,65 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+a { color: black; } 
+
+.pic {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: -1;
+    width: 100%; height: 100%;
+    background: url("../img/index11_img14.jpg");
+    background-size: 100% 100%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transform: scale(1.1);
+}
+@keyframes zoom {
+    /* 0% {scale: 100%;} */
+    /* 0% {transform: scale(1.1)} */
+    0% {scale: 100%;}
+    50% {scale: 120%;}
+    100% {scale: 100%;}
+}
+.menu {
+    border: 1px solid orange;
+    position: fixed;
+    top: 100px; left: 100px;
+    width: 150px;
+}
+.menu li {
+    border: 1px solid white;
+    border-radius: 15px;
+    top: 0; left: 0;
+    width: 100%; height: 50px;
+    margin-top: 10px;
+    text-indent: 20px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 2px black;
+    cursor: pointer;
+}
+.menu li:hover {
+    background: white;
+    color: aqua;
+}
+.move {
+    position: fixed;
+    top: 100px; left: 90%;
+    width: 700px; height: 700px;
+    border: 0px solid red;
+    border-radius: 100%;
+    box-shadow: 15px 15px 30px #ccc;
+}
+.move img {
+    width: 100%; height: 100%;
+    border-radius: 100%;
+}
+.menu li:hover {
+    
+}

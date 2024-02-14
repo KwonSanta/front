@@ -3,17 +3,22 @@
     box-sizing: border-box;
     list-style: none;
 }
+/* 
+버튼은 button 태그 사용 (input, 또는 html 태그 사용 가능)
+버튼 가로 크기 100px
+onclick, 또는 addEventListener 사용 (getElementById, querySelector사용
+    버튼 내용은 임의로 설정 가능
+        예) 아메리카노, 카푸치노…
+        예) 컴퓨터 사양-1, 컴퓨터 사양-2 ….
+*/
+section {
 
-html {
-    font-size: 30px;
 }
-.box {
-    width: 200px;
+section button {
+    width: 100px; height: 50px;
 }
-.box li {
-    width: 100%;
+
+article {
     border: 1px solid black;
-}
-.box li span {
-    border: 0px solid green;
+    width: 500px; height: 50px;
 }

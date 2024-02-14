@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index8.css">
+    <script src="javascript/index8.js"></script>
+</head>
+<body>
+    <section class="btn">
+        <button id="btn0">버튼-1</button>
+        <button id="btn1">버튼-2</button>
+        <button id="btn2">버튼-3</button>
+    </section>
+    
+    <article>
+        <div class="txt">
+            설명이 나타나는 박스
+        </div>
+    </article>
+</body>
+</html>
+<!--  -->
+
+
+const txtA = [
+    "컴퓨터 사양-1",
+    "컴퓨터 사양-2",
+    "컴퓨터 사양-3"
+];
+let i, no;
+var btn0, btn1, btn2;
+var txt;
+window.onload = function() {
+    btn0 = document.getElementById("btn0");
+    btn1 = document.getElementById("btn1");
+    btn2 = document.getElementById("btn2");
+    txt = document.querySelector(".txt");
+
+    btn0.onclick = function() {
+        txt.innerHTML = txtA[0];
+    }
+    btn1.onclick = function() {
+        txt.innerHTML = txtA[1];
+    }
+    btn2.onclick = function() {
+        txt.innerHTML = txtA[2];
+    }
+}
+$(function() {
+    
+})

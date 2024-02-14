@@ -1,0 +1,44 @@
+<-- HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index8.css">
+    <script src="javascript/index8.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li>아메리카노</li>
+            <li>카푸치노</li>
+            <li>밀크커피</li>
+            <li>딸기커피</li>
+            <li>블랙커피</li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+
+<-- CSS -->
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+nav {
+
+}
+nav ul {
+    display: flex;
+}
+.menu li {
+    border: 1px solid green;
+    width: 100px; height: 30px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 30px;
+}

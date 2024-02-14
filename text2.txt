@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index8.css">
+    <script src="javascript/index8.js"></script>
+</head>
+<body>
+    <section>
+        <div>
+            <img src="./img/index11_img0.jpg" alt="">
+        </div>
+        <div>
+            <img src="./img/index11_img1.jpg" alt="">
+        </div>
+        <div>
+            <img src="./img/index11_img10.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+section {
+    border: 1px solid black;
+    width: 50%; height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+section div {
+    width: 300; height: 150px;
+    border: 1px solid red;
+}
+section div img { 
+    width: 100%; height: 100%;
+}
