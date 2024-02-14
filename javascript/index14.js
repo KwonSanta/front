@@ -59,7 +59,7 @@ window.onload = function() {
 
 
 $(function() {
-    $(".menuCall").on("click", function() {
+    $(".menuCall").on("mouseover", function() {
         $(".menuBox").animate({"right" : "0"}, 500);
     })
     $(".menuBox li").on("click", function() {
